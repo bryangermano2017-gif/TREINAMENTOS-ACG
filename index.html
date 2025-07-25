@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ACG Treinamentos - Segurança em Primeiro Lugar</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e0e0;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  header {
+    background: rgba(10, 25, 47, 0.9);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.7);
+  }
+
+  header h1 {
+    color: #00b7ff;
+    font-size: 2.8rem;
+    text-shadow: 0 0 10px #00b7ff;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .intro h2 {
+    font-size: 2.4rem;
+    color: #00b7ff;
+    text-shadow: 0 0 8px #00b7ff;
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    color: #c0d6e4;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+
+  .importance {
+    background: rgba(255,255,255,0.05);
+    border-left: 5px solid #00b7ff;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 0 20px #00b7ff22;
+  }
+
+  .importance h3 {
+    color: #00d1ff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .importance p {
+    color: #c0d6e4;
+    font-size: 1.1rem;
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .course-card {
+    background: rgba(10, 25, 47, 0.9);
+    border-radius: 16px;
+    padding: 25px;
+    width: 320px;
+    box-shadow: 0 8px 20px #00b7ffaa, inset 0 0 50px #00b7ff33;
+    transition: transform 0.4s ease;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .course-card:hover {
+    transform: rotateY(6deg) scale(1.04);
+  }
+
+  .course-title {
+    color: #00d1ff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .course-duration {
+    color: #88e0ff;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .course-description {
+    color: #c0d6e4;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+
+  .course-price {
+    color: #00ffcc;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+
+  .btn-inscrever {
+    display: inline-block;
+    background: #00b7ff;
+    color: #0d1b2a;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: 0 0 18px #00b7ff99;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  .btn-inscrever:hover {
+    background: #00d1ff;
+    box-shadow: 0 0 35px #00d1ffcc;
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .contact p {
+    font-size: 1rem;
+    color: #c0d6e4;
+  }
+
+  .contact a {
+    color: #00b7ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: rgba(10, 25, 47, 0.9);
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .courses {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ACG Treinamentos</h1>
+</header>
+
+<main>
+  <section class="intro">
+    <h2>Capacitação Profissional em Segurança do Trabalho</h2>
+    <p>Preparar profissionais para ambientes de risco é nosso compromisso. Com cursos NR-33, NR-18 e NR-35, você protege sua vida e valoriza seu currículo.</p>
+  </section>
+
+  <section class="importance">
+    <h3>Por que fazer esses cursos?</h3>
+    <p>As Normas Regulamentadoras garantem sua segurança e são exigidas legalmente por empresas. Ter essas certificações mostra preparo, responsabilidade e aumenta suas oportunidades no mercado de trabalho. Com elas, você evita acidentes, protege colegas e está legalizado para atuar.</p>
+  </section>
+
+  <section class="courses">
+    <div class="course-card">
+      <h3 class="course-title">NR-33 – Espaços Confinados</h3>
+      <p class="course-duration">Carga Horária: 16h</p>
+      <p class="course-description">Aprenda a trabalhar com segurança em espaços confinados, identificando riscos e cumprindo a legislação vigente.</p>
+      <p class="course-price">Valor: R$ 120,00</p>
+      <a href="LINK_DO_SEU_GOOGLE_FORM_N33" class="btn-inscrever" target="_blank">Inscrever-se</a>
+    </div>
+    <div class="course-card">
+      <h3 class="course-title">NR-18 – Construção Civil</h3>
+      <p class="course-duration">Carga Horária: 6h</p>
+      <p class="course-description">Segurança em obras e construções: procedimentos corretos e exigências da norma para evitar acidentes.</p>
+      <p class="course-price">Valor: R$ 90,00</p>
+      <a href="LINK_DO_SEU_GOOGLE_FORM_N18" class="btn-inscrever" target="_blank">Inscrever-se</a>
+    </div>
+    <div class="course-card">
+      <h3 class="course-title">NR-35 – Trabalho em Altura</h3>
+      <p class="course-duration">Carga Horária: 8h</p>
+      <p class="course-description">Capacitação completa para quem atua acima de 2m. Uso correto de EPIs e prevenção de quedas.</p>
+      <p class="course-price">Valor: R$ 100,00</p>
+      <a href="LINK_DO_SEU_GOOGLE_FORM_N35" class="btn-inscrever" target="_blank">Inscrever-se</a>
+    </div>
+  </section>
+
+  <section class="contact">
+    <p>📧 E-mail: <a href="mailto:acgtreinamentos.seg@gmail.com">acgtreinamentos.seg@gmail.com</a></p>
+    <p>💬 Fale direto no WhatsApp: 
+      <a href="https://wa.me/5549991595738" target="_blank">Clique aqui</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 ACG Treinamentos. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
